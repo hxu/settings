@@ -1,0 +1,7 @@
+[user]
+	name = Han Xu
+	email = hgcrpd@gmail.com
+[core]
+	editor = vim
+[merge]
+	tool = vimdiff
