@@ -1,3 +1,4 @@
+call pathogen#infect()
 syntax on
 filetype indent plugin on
 set tabstop=8
@@ -14,4 +15,3 @@ let g:miniBufExplMapWindowNavArrows = 1
 let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1
 
-call pathogen#infect()
