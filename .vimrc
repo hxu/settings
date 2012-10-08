@@ -17,3 +17,5 @@ let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1
 
 autocmd Filetype python set omnifunc=pythoncomplete#Complete
+
+colo ir_black
