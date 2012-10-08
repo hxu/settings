@@ -20,3 +20,5 @@ let g:miniBufExplModSelTarget = 1
 autocmd Filetype python set omnifunc=pythoncomplete#Complete
 
 colo ir_black
+
+set guifont=Menlo:h13
