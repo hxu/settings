@@ -8,7 +8,7 @@ set softtabstop=4
 set autoindent
 set number
 set hidden
-set wrap
+set nowrap
 set linebreak
 
 let g:miniBufExplMapWindowNavVim = 1
