@@ -115,3 +115,11 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RMV into a shell session *as a function*
 
 alias vim="mvim"
+
+export RUBY_HEAP_MIN_SLOTS=800000
+export RUBY_HEAP_FREE_MIN=100000
+export RUBY_HEAP_SLOTS_INCREMENT=300000
+export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
+export RUBY_GC_MALLOC_LIMIT=79000000
+
+alias td="testdrb -I test"
