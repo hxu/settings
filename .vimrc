@@ -11,6 +11,9 @@ set hidden
 set nowrap
 set linebreak
 set noantialias
+set nocompatible
+set laststatus=2
+set encoding=utf-8
 
 let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapWindowNavArrows = 1
