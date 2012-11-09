@@ -23,3 +23,5 @@ let g:miniBufExplModSelTarget = 1
 colorscheme ir_black
 
 autocmd Filetype python set omnifunc=pythoncomplete#Complete
+
+nmap <C-Tab> :tabn<CR>
