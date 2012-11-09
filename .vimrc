@@ -25,3 +25,4 @@ colorscheme ir_black
 autocmd Filetype python set omnifunc=pythoncomplete#Complete
 
 nmap <C-Tab> :tabn<CR>
+nmap <C-S-Tab> :tabp<CR>
