@@ -21,8 +21,8 @@ let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1
 
 colorscheme ir_black
-
 autocmd Filetype python set omnifunc=pythoncomplete#Complete
+autocmd Filetype ruby setlocal shiftwidth=2 softtabstop=2
 
 nmap <C-Tab> :tabn<CR>
 nmap <C-S-Tab> :tabp<CR>
