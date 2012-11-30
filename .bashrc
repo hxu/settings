@@ -111,3 +111,6 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RMV into a shell session *as a function*
 
 alias django='python manage.py'
+export WORKON_HOME=~/envs
+export PROJECT_HOME=~/src
+source /usr/local/bin/virtualenvwrapper.sh
