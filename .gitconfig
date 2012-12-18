@@ -3,6 +3,7 @@
 	email = hgcrpd@gmail.com
 [core]
 	editor = vim
+	filemode = false
 [merge]
 	tool = vimdiff
 [credential]
