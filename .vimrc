@@ -26,3 +26,6 @@ autocmd Filetype ruby setlocal shiftwidth=2 softtabstop=2
 colo ir_black
 
 set guifont=Menlo:h13
+
+let g:ConqueTerm_InsertOnEnter = 1
+let g:ConqueTerm_CWInsert = 1
