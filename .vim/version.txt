@@ -1,0 +1,30 @@
+VIM - Vi IMproved 7.3 (2010 Aug 15, compiled May  4 2012 04:10:09)
+Included patches: 1-429
+Modified by pkg-vim-maintainers@lists.alioth.debian.org
+Compiled by buildd@
+Huge version with GTK2-GNOME GUI.  Features included (+) or not (-):
++arabic +autocmd +balloon_eval +browse ++builtin_terms +byte_offset +cindent 
++clientserver +clipboard +cmdline_compl +cmdline_hist +cmdline_info +comments 
++conceal +cryptv +cscope +cursorbind +cursorshape +dialog_con_gui +diff 
++digraphs +dnd -ebcdic +emacs_tags +eval +ex_extra +extra_search +farsi 
++file_in_path +find_in_path +float +folding -footer +fork() +gettext 
+-hangul_input +iconv +insert_expand +jumplist +keymap +langmap +libcall 
++linebreak +lispindent +listcmds +localmap +lua +menu +mksession +modify_fname 
++mouse +mouseshape +mouse_dec +mouse_gpm -mouse_jsbterm +mouse_netterm 
+-mouse_sysmouse +mouse_xterm +mouse_urxvt +multi_byte +multi_lang -mzscheme 
++netbeans_intg +path_extra +perl +persistent_undo +postscript +printer +profile
+ +python -python3 +quickfix +reltime +rightleft +ruby +scrollbind +signs 
++smartindent -sniff +startuptime +statusline -sun_workshop +syntax +tag_binary 
++tag_old_static -tag_any_white +tcl +terminfo +termresponse +textobjects +title
+ +toolbar +user_commands +vertsplit +virtualedit +visual +visualextra +viminfo 
++vreplace +wildignore +wildmenu +windows +writebackup +X11 -xfontset +xim 
++xsmp_interact +xterm_clipboard -xterm_save 
+   system vimrc file: "$VIM/vimrc"
+     user vimrc file: "$HOME/.vimrc"
+      user exrc file: "$HOME/.exrc"
+  system gvimrc file: "$VIM/gvimrc"
+    user gvimrc file: "$HOME/.gvimrc"
+    system menu file: "$VIMRUNTIME/menu.vim"
+  fall-back for $VIM: "/usr/share/vim"
+Compilation: gcc -c -I. -Iproto -DHAVE_CONFIG_H -DFEAT_GUI_GTK  -pthread -I/usr/include/gtk-2.0 -I/usr/lib/i386-linux-gnu/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/glib-2.0 -I/usr/lib/i386-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng12   -pthread -DORBIT2=1 -D_REENTRANT -I/usr/include/libgnomeui-2.0 -I/usr/include/gconf/2 -I/usr/include/gnome-keyring-1 -I/usr/include/gtk-2.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/i386-linux-gnu/dbus-1.0/include -I/usr/include/glib-2.0 -I/usr/lib/i386-linux-gnu/glib-2.0/include -I/usr/include/orbit-2.0 -I/usr/include/libxml2 -I/usr/include/pango-1.0 -I/usr/include/gail-1.0 -I/usr/include/freetype2 -I/usr/include/atk-1.0 -I/usr/lib/i386-linux-gnu/gtk-2.0/include -I/usr/include/cairo -I/usr/include/gio-unix-2.0/ -I/usr/include/pixman-1 -I/usr/include/libpng12 -I/usr/include/libart-2.0 -I/usr/include/libgnome-2.0 -I/usr/include/libbonoboui-2.0 -I/usr/include/libgnomecanvas-2.0 -I/usr/include/gnome-vfs-2.0 -I/usr/lib/gnome-vfs-2.0/include -I/usr/include/libbonobo-2.0 -I/usr/include/bonobo-activation-2.0     -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1     -I/usr/include/tcl8.5  -D_REENTRANT=1  -D_THREAD_SAFE=1  -D_LARGEFILE64_SOURCE=1  
+Linking: gcc   -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -rdynamic -Wl,-export-dynamic  -Wl,-E  -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,--as-needed -o vim   -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lgio-2.0 -lpangoft2-1.0 -lpangocairo-1.0 -lgdk_pixbuf-2.0 -lcairo -lpango-1.0 -lfreetype -lfontconfig -lgobject-2.0 -lglib-2.0     -lgnomeui-2 -lSM -lICE -lbonoboui-2 -lgnomevfs-2 -lgnomecanvas-2 -lgnome-2 -lpopt -lbonobo-2 -lbonobo-activation -lORBit-2 -lart_lgpl_2 -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lgio-2.0 -lpangoft2-1.0 -lpangocairo-1.0 -lgdk_pixbuf-2.0 -lcairo -lpango-1.0 -lfreetype -lfontconfig -lgconf-2 -lgthread-2.0 -lgmodule-2.0 -lrt -lgobject-2.0 -lglib-2.0   -lSM -lICE -lXpm -lXt -lX11 -lXdmcp -lSM -lICE -lm -ltinfo -lnsl  -lselinux  -lacl -lattr -lgpm -ldl  -L/usr/lib -llua5.1  -Wl,-E  -fstack-protector -L/usr/local/lib  -L/usr/lib/perl/5.14/CORE -lperl -ldl -lm -lpthread -lcrypt -L/usr/lib/python2.7/config -lpython2.7 -lpthread -ldl -lutil -lm -Xlinker -export-dynamic -Wl,-O1 -Wl,-Bsymbolic-functions  -L/usr/lib -ltcl8.5 -ldl -lpthread -lieee -lm -lruby1.8 -lpthread -lrt -ldl -lcrypt -lm  -L/usr/lib  

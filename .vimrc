@@ -1,4 +1,52 @@
-call pathogen#infect()
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+
+ " My Bundles here:
+ "
+ " original repos on github
+ Bundle 'tpope/vim-fugitive'
+ Bundle 'Lokaltog/vim-easymotion'
+ Bundle 'Lokaltog/powerline'
+ Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+ Bundle 'mileszs/ack.vim'
+ Bundle 'kien/ctrlp.vim'
+ Bundle 'scrooloose/nerdcommenter'
+ Bundle 'gregsexton/gitv'
+ Bundle 'klen/python-mode'
+ Bundle 'scrooloose/syntastic'
+ Bundle 'majutsushi/tagbar'
+ Bundle 'SirVer/ultisnips'
+ Bundle 'vim-ruby/vim-ruby'
+ Bundle 'tpope/vim-surround'
+ Bundle 'kchmck/vim-coffee-script'
+
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+
+" Bundle 'tpope/vim-rails.git'
+ " vim-scripts repos
+" Bundle 'L9'
+" Bundle 'FuzzyFinder'
+ " non github repos
+" Bundle 'git://git.wincent.com/command-t.git'
+ " git repos on your local machine (ie. when working on your own plugin)
+" Bundle 'file:///Users/gmarik/path/to/plugin'
+ " ...
+
+ "
+ " Brief help
+ " :BundleList          - list configured bundles
+ " :BundleInstall(!)    - install(update) bundles
+ " :BundleSearch(!) foo - search(or refresh cache first) for foo
+ " :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+ "
+ " see :h vundle for more details or wiki for FAQ
+ " NOTE: comments after Bundle command are not allowed..
+
 syntax on
 filetype indent plugin on
 set tabstop=8
@@ -14,15 +62,13 @@ set noantialias
 set nocompatible
 set laststatus=2
 set encoding=utf-8
-
-let g:miniBufExplMapWindowNavVim = 1
-let g:miniBufExplMapWindowNavArrows = 1
-let g:miniBufExplMapCTabSwitchBufs = 1
-let g:miniBufExplModSelTarget = 1
+set guifont=Menlo\ for\ Powerline
 
 colorscheme ir_black
-autocmd Filetype python set omnifunc=pythoncomplete#Complete
+"autocmd Filetype python set omnifunc=pythoncomplete#Complete
 autocmd Filetype ruby setlocal shiftwidth=2 softtabstop=2
+autocmd Filetype html setlocal shiftwidth=2 softtabstop=2
+autocmd Filetype htmldjango setlocal shiftwidth=2 softtabstop=2 tw=0
 
 nmap <C-Tab> :tabn<CR>
 nmap <C-S-Tab> :tabp<CR>
