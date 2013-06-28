@@ -12,7 +12,8 @@ Bundle 'gmarik/vundle'
  Bundle 'tpope/vim-fugitive'
  Bundle 'Lokaltog/vim-easymotion'
  Bundle 'Lokaltog/powerline'
- Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+ "Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+ "Bundle 'tristen/vim-sparkup' "Doesn't seem to work
  Bundle 'mileszs/ack.vim'
  Bundle 'kien/ctrlp.vim'
  Bundle 'scrooloose/nerdcommenter'
@@ -24,6 +25,8 @@ Bundle 'gmarik/vundle'
  Bundle 'vim-ruby/vim-ruby'
  Bundle 'tpope/vim-surround'
  Bundle 'kchmck/vim-coffee-script'
+ Bundle 'Valloric/YouCompleteMe'
+ Bundle 'Raimondi/delimitMate'
 
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 
@@ -63,6 +66,17 @@ set nocompatible
 set laststatus=2
 set encoding=utf-8
 set guifont=Menlo\ for\ Powerline
+set backspace=2
+set backspace=indent,eol,start
+
+nnoremap <silent> <F9> :TagbarToggle<CR>
+
+let g:pymode_lint_checker = 'pyflakes'
+
+let g:UltiSnipsExpandTrigger="<c-tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+let g:UltiSnipsListSnippets=""
 
 colorscheme ir_black
 "autocmd Filetype python set omnifunc=pythoncomplete#Complete
