@@ -82,6 +82,8 @@ let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:UltiSnipsListSnippets=""
 
+let g:slime_target="tmux"
+
 colorscheme ir_black
 "autocmd Filetype python set omnifunc=pythoncomplete#Complete
 autocmd Filetype ruby setlocal shiftwidth=2 softtabstop=2
