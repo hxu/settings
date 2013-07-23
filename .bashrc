@@ -114,3 +114,7 @@ alias django='python manage.py'
 export WORKON_HOME=~/envs
 export PROJECT_HOME=~/src
 source /usr/local/bin/virtualenvwrapper.sh
+
+source ~/.nvm/nvm.sh
+
+. ~/z.sh
