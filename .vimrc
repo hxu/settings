@@ -28,6 +28,7 @@ Bundle 'gmarik/vundle'
  "Bundle 'Valloric/YouCompleteMe'
  Bundle 'Raimondi/delimitMate'
  Bundle 'jpalardy/vim-slime'
+ Bundle 'vim-scripts/Vim-R-plugin'
 
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 
