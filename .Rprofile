@@ -9,7 +9,6 @@ n <- base::names
 options("digits.secs"=3)            # show sub-second time stamps 
 options("digits"=4)
 options(stringsAsFactors = FALSE)
-options(error = function() traceback(2)) # Print tracebacks on error
 
 .First <- function(){
   cat("\n Rrrr! The statistics program for Pirates !\n\n")
