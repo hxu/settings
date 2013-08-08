@@ -29,6 +29,7 @@ Bundle 'gmarik/vundle'
  Bundle 'Raimondi/delimitMate'
  Bundle 'jpalardy/vim-slime'
  Bundle 'vim-scripts/Vim-R-plugin'
+ "Bundle 'tomtom/checksyntax_vim' "Doesn't work really well for R
 
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 
@@ -72,6 +73,7 @@ set encoding=utf-8
 set guifont=Menlo\ for\ Powerline
 set backspace=2
 set backspace=indent,eol,start
+set smartindent
 "set completeopt="menu"
 
 nnoremap <silent> <F9> :TagbarToggle<CR>
