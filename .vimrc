@@ -73,7 +73,7 @@ set encoding=utf-8
 set guifont=Menlo\ for\ Powerline
 set backspace=2
 set backspace=indent,eol,start
-set smartindent
+"set smartindent
 "set completeopt="menu"
 
 nnoremap <silent> <F9> :TagbarToggle<CR>

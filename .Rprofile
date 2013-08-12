@@ -1,8 +1,3 @@
-require(zoo)
-require(xts)
-require(ggplot2)
-require(plyr)
-
 s <- base::summary
 h <- utils::head 
 n <- base::names
