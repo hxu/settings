@@ -29,6 +29,7 @@ Bundle 'gmarik/vundle'
  Bundle 'Raimondi/delimitMate'
  Bundle 'jpalardy/vim-slime'
  Bundle 'vim-scripts/Vim-R-plugin'
+ Bundle 'altercation/vim-colors-solarized'
  "Bundle 'tomtom/checksyntax_vim' "Doesn't work really well for R
 
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
@@ -87,7 +88,9 @@ let g:UltiSnipsListSnippets=""
 
 let g:slime_target="tmux"
 
-colorscheme ir_black
+set background=dark
+colorscheme solarized
+"colorscheme ir_black
 "autocmd Filetype python set omnifunc=pythoncomplete#Complete
 autocmd Filetype ruby setlocal shiftwidth=2 softtabstop=2
 autocmd Filetype html setlocal shiftwidth=2 softtabstop=2
