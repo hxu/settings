@@ -22,15 +22,25 @@ Bundle 'gmarik/vundle'
  Bundle 'scrooloose/syntastic'
  Bundle 'majutsushi/tagbar'
  Bundle 'SirVer/ultisnips'
- Bundle 'vim-ruby/vim-ruby'
  Bundle 'tpope/vim-surround'
  Bundle 'kchmck/vim-coffee-script'
+ Bundle 'L9'
+ Bundle 'FuzzyFinder'
  "Bundle 'Valloric/YouCompleteMe'
  Bundle 'Raimondi/delimitMate'
  Bundle 'jpalardy/vim-slime'
  Bundle 'vim-scripts/Vim-R-plugin'
  Bundle 'altercation/vim-colors-solarized'
  "Bundle 'tomtom/checksyntax_vim' "Doesn't work really well for R
+ Bundle 'lukerandall/haskellmode-vim'
+ Bundle 'indenthaskell.vim'
+ Bundle 'junegunn/vim-easy-align'
+ Bundle 'bitc/vim-hdevtools'
+
+ " For Rails"
+ Bundle 'vim-ruby/vim-ruby'
+ Bundle 'tpope/vim-rails'
+
 
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 
@@ -98,3 +108,15 @@ autocmd Filetype htmldjango setlocal shiftwidth=2 softtabstop=2 tw=0
 
 nmap <C-Tab> :tabn<CR>
 nmap <C-S-Tab> :tabp<CR>
+
+au Bufenter *.hs compiler ghc
+let g:haddock_browser="/usr/bin/google-chrome"
+let g:haddock_docdir="/usr/share/haddock-2.10.0/html"
+
+au FileType haskell nnoremap <buffer> <F1> :HdevtoolsType<CR>
+au FileType haskell nnoremap <buffer> <F2> :HdevtoolsClear<CR>
+
+vnoremap <silent> <Enter> :EasyAlign<cr>
+let g:easy_align_delimiters = {
+    \ '>': { 'pattern': '>>\|=>\|>\|->' }
+    \}

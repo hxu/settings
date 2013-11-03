@@ -117,3 +117,8 @@ source /usr/local/bin/virtualenvwrapper.sh
 source ~/.nvm/nvm.sh
 
 . ~/z.sh
+
+PATH=$PATH:$HOME/Programs/android-sdk-linux/tools
+PATH=$PATH:$HOME/Programs/android-sdk-linux/platform-tools
+PATH=$PATH:$HOME/Programs/android-studio/bin
+PATH=$PATH:$HOME/.cabal/bin
