@@ -26,6 +26,7 @@ Bundle 'gmarik/vundle'
  Bundle 'kchmck/vim-coffee-script'
  Bundle 'L9'
  Bundle 'FuzzyFinder'
+ Bundle 'scrooloose/nerdtree'
  "Bundle 'Valloric/YouCompleteMe'
  Bundle 'Raimondi/delimitMate'
  Bundle 'jpalardy/vim-slime'
@@ -40,6 +41,12 @@ Bundle 'gmarik/vundle'
  " For Rails"
  Bundle 'vim-ruby/vim-ruby'
  Bundle 'tpope/vim-rails'
+
+ " Javascript"
+ Bundle 'pangloss/vim-javascript'
+ Bundle 'briancollins/vim-jst'
+
+ Bundle 'octave.vim'
 
 
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
@@ -103,7 +110,11 @@ colorscheme solarized
 "colorscheme ir_black
 "autocmd Filetype python set omnifunc=pythoncomplete#Complete
 autocmd Filetype ruby setlocal shiftwidth=2 softtabstop=2
+autocmd Filetype javascript setlocal shiftwidth=2 softtabstop=2
 autocmd Filetype html setlocal shiftwidth=2 softtabstop=2
+autocmd Filetype eruby setlocal shiftwidth=2 softtabstop=2
+autocmd Filetype jst setlocal shiftwidth=2 softtabstop=2
+autocmd Filetype scss setlocal shiftwidth=2 softtabstop=2
 autocmd Filetype htmldjango setlocal shiftwidth=2 softtabstop=2 tw=0
 
 nmap <C-Tab> :tabn<CR>
@@ -120,3 +131,5 @@ vnoremap <silent> <Enter> :EasyAlign<cr>
 let g:easy_align_delimiters = {
     \ '>': { 'pattern': '>>\|=>\|>\|->' }
     \}
+
+map <C-N> :NERDTreeToggle<CR>

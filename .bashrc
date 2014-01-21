@@ -122,3 +122,9 @@ PATH=$PATH:$HOME/Programs/android-sdk-linux/tools
 PATH=$PATH:$HOME/Programs/android-sdk-linux/platform-tools
 PATH=$PATH:$HOME/Programs/android-studio/bin
 PATH=$PATH:$HOME/.cabal/bin
+
+# The next line updates PATH for the Google Cloud SDK.
+export PATH=/home/hxu/Downloads/google-cloud-sdk/bin:$PATH
+
+# The next line enables bash completion for gcloud.
+source /home/hxu/Downloads/google-cloud-sdk/arg_rc
